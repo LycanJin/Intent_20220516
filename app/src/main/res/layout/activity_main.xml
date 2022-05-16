@@ -15,7 +15,7 @@
         android:text="여기는 메인 화면" />
 
     <Button
-        android:id="@+id/brn_move"
+        android:id="@+id/btn_move"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="다른 화면으로 이동하기" />
