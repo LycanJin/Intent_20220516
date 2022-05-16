@@ -17,5 +17,17 @@ class MainActivity : AppCompatActivity() {
             startActivity(myIntent)
 
         }
+
+        btn_send_message.setOnClickListener {
+
+            // 다른 액티비티로 메시지 넘기기
+            val message = edt_message.text.toString()
+
+            val intent = Intent(this, ViewMessageActivity::class.java)
+            // 출발전에 데이터 첨부
+            intent.putExtra("key_message", message)
+            startActivity(intent)
+
+        }
     }
 }
